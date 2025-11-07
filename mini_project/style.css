@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #2d005d; /* Same as image background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Outer Container */
+.container {
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  max-width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+/* Display container */
+.display_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #12002f;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #5e2f92;
+}
+
+.display {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffdbfc;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+button[data-copy] {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+[data-copymsg] {
+  font-size: 0.7rem;
+  margin-right: 5px;
+  color: #00ffa5;
+}
+
+/* Input section */
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Password length display */
+.lenth_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffcdff;
+}
+
+/* Slider */
+.data_lengthslider {
+  width: 100%;
+  height: 6px;
+  appearance: none;
+  background: #ffcdff;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.data_lengthslider::-webkit-slider-thumb {
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  background: yellow;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 5px yellow;
+  transition: 0.2s;
+}
+
+/* Checkboxes */
+.input_container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.input_container label {
+  color: #ffffff;
+}
+
+input[type="checkbox"] {
+  accent-color: #00ffc8;
+  width: 16px;
+  height: 16px;
+}
+
+/* Strength */
+.strengthcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+[data-indecator] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #00ff00; /* green (as shown in image) */
+  box-shadow: 0 0 8px #00ff00;
+}
+
+/* Generate Password Button */
+.generate {
+  padding: 12px;
+  background: #ff00cc;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ccaa;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.generate:hover {
+  background: #d900b4;
+  transform: translateY(-2px);
+}
